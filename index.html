@@ -1,0 +1,349 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON CORE — Премиальный Фитнес-Клуб</title>
+  <!-- Font Awesome для иконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Header -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#hero" class="logo">
+        IRON <span>CORE</span>
+      </a>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link active">Главная</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li class="nav__item"><a href="#trainers" class="nav__link">Тренеры</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">Абонементы</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--primary open-modal-btn">Записаться</button>
+        <button class="burger" id="burger-menu" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="badge">Премиальный фитнес-клуб</span>
+          <h1 class="hero__title">ПРЕОДОЛЕЙ СВОИ <span>ПРЕДЕЛЫ</span></h1>
+          <p class="hero__subtitle">Высокотехнологичное оборудование, авторские программы тренировок и сильнейший тренерский состав в IRON CORE.</p>
+          <div class="hero__btns">
+            <button class="btn btn--primary open-modal-btn">Купить абонемент</button>
+            <a href="#services" class="btn btn--outline">Наши услуги</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">НАШИ <span>УСЛУГИ</span></h2>
+          <p class="section__subtitle">Выбери направление для достижения своих целей</p>
+        </div>
+
+        <div class="grid services__grid">
+          <div class="card service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <h3 class="service-card__title">Тренажерный зал</h3>
+            <p class="service-card__desc">Просторный зал с премиальными тренажерами Hammer Strength и Eleiko для силовых и кардио тренировок.</p>
+          </div>
+
+          <div class="card service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="service-card__title">Групповые программы</h3>
+            <p class="service-card__desc">Кроссфит, памп, сайклинг и высокоинтенсивные интервальные тренировки (HIIT) под драйвовую музыку.</p>
+          </div>
+
+          <div class="card service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-user-ninja"></i>
+            </div>
+            <h3 class="service-card__title">Персональный тренинг</h3>
+            <p class="service-card__desc">Индивидуальный план тренировок и питания от мастеров спорта с гарантией результата.</p>
+          </div>
+
+          <div class="card service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h3 class="service-card__title">Йога & Стретчинг</h3>
+            <p class="service-card__desc">Восстановление гармонии, гибкости и снятие стресса в специально оборудованной студии.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Gallery & Trainers Section -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">ГАЛЕРЕЯ <span>КЛУБА</span></h2>
+          <p class="section__subtitle">Атмосфера железного спорта и комфорта</p>
+        </div>
+
+        <div class="grid gallery__grid">
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Тренажерный зал IRON CORE" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Зона свободных весов" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Кардио зона" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80" alt="Зона кроссфита" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trainers" id="trainers">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">КОМАНДА <span>ТРЕНЕРОВ</span></h2>
+          <p class="section__subtitle">Профессионалы, которые приведут тебя к форме твоей мечты</p>
+        </div>
+
+        <div class="grid trainers__grid">
+          <div class="card trainer-card">
+            <div class="trainer-card__img">
+              <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="Александр Громов" loading="lazy">
+            </div>
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Александр Громов</h3>
+              <span class="trainer-card__spec">Главный тренер / Bodybuilding</span>
+              <p class="trainer-card__desc">Опыт 10+ лет. Мастер спорта по пауэрлифтингу. Специалист по набору массы и силовым показателям.</p>
+            </div>
+          </div>
+
+          <div class="card trainer-card">
+            <div class="trainer-card__img">
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80" alt="Елена Воронова" loading="lazy">
+            </div>
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Елена Воронова</h3>
+              <span class="trainer-card__spec">Crossfit & HIIT</span>
+              <p class="trainer-card__desc">Эксперт по функциональному тренингу и жиросжиганию. Сертифицированный нутрициолог.</p>
+            </div>
+          </div>
+
+          <div class="card trainer-card">
+            <div class="trainer-card__img">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Максим Соколов" loading="lazy">
+            </div>
+            <div class="trainer-card__info">
+              <h3 class="trainer-card__name">Максим Соколов</h3>
+              <span class="trainer-card__spec">Персональный тренинг</span>
+              <p class="trainer-card__desc">Специалист по реабилитации и осанке. Помогает безопасно достичь устойчивого результата.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Memberships / Pricing Section -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">ТАРИФНЫЕ <span>ПЛАНЫ</span></h2>
+          <p class="section__subtitle">Выбери удобный формат посещения</p>
+        </div>
+
+        <div class="grid pricing__grid">
+          <!-- Старт -->
+          <div class="card pricing-card">
+            <h3 class="pricing-card__title">СТАРТ</h3>
+            <div class="pricing-card__price">
+              <span class="amount">400 000</span>
+              <span class="currency">сум / мес</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Доступ в клуб с 08:00 до 16:00</li>
+              <li><i class="fa-solid fa-check"></i> Тренажерный зал и кардио</li>
+              <li><i class="fa-solid fa-check"></i> Вводный инструктаж</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Групповые программы</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Финская сауна</li>
+            </ul>
+            <button class="btn btn--outline open-modal-btn">Выбрать</button>
+          </div>
+
+          <!-- Безлимит (Популярный) -->
+          <div class="card pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Популярный</div>
+            <h3 class="pricing-card__title">БЕЗЛИМИТ</h3>
+            <div class="pricing-card__price">
+              <span class="amount">650 000</span>
+              <span class="currency">сум / мес</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Безлимитный доступ 24/7</li>
+              <li><i class="fa-solid fa-check"></i> Тренажерный зал и кардио</li>
+              <li><i class="fa-solid fa-check"></i> Все групповые занятия</li>
+              <li><i class="fa-solid fa-check"></i> Посещение сауны</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> 2 персональные тренировки</li>
+            </ul>
+            <button class="btn btn--primary open-modal-btn">Выбрать</button>
+          </div>
+
+          <!-- PRO -->
+          <div class="card pricing-card">
+            <h3 class="pricing-card__title">VIP PRO</h3>
+            <div class="pricing-card__price">
+              <span class="amount">1 200 000</span>
+              <span class="currency">сум / мес</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Безлимитный доступ 24/7</li>
+              <li><i class="fa-solid fa-check"></i> Все групповые программы</li>
+              <li><i class="fa-solid fa-check"></i> Финская сауна & Spa</li>
+              <li><i class="fa-solid fa-check"></i> 4 персональные тренировки</li>
+              <li><i class="fa-solid fa-check"></i> Персональный шкафчик и халат</li>
+            </ul>
+            <button class="btn btn--outline open-modal-btn">Выбрать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contacts & Socials Section -->
+    <section class="section contacts" id="contacts">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">КОНТАКТЫ <span>И ЛОКАЦИЯ</span></h2>
+          <p class="section__subtitle">Ждем вас на первой тренировке</p>
+        </div>
+
+        <div class="contacts__wrapper">
+          <div class="contacts__info">
+            <div class="contacts__item">
+              <div class="contacts__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Адрес:</h4>
+                <p>г. Ташкент, ул. Шайхантахур, д. 45 (Малика)</p>
+              </div>
+            </div>
+
+            <div class="contacts__item">
+              <div class="contacts__icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Телефон:</h4>
+                <p><a href="tel:+998901234567">+998 (90) 123-45-67</a></p>
+              </div>
+            </div>
+
+            <div class="contacts__item">
+              <div class="contacts__icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Режим работы:</h4>
+                <p>Пн - Сб: 06:00 - 23:00<br>Вс: 08:00 - 22:00</p>
+              </div>
+            </div>
+
+            <div class="socials">
+              <h4>Мы в соцсетях:</h4>
+              <div class="socials__links">
+                <a href="#" class="socials__link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="socials__link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="socials__link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="socials__link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Интерактивная карта (Имитация / Embed) -->
+          <div class="contacts__map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47934.36440266014!2d69.240562!3d41.311081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#hero" class="logo">IRON <span>CORE</span></a>
+      <p class="footer__copy">&copy; 2026 IRON CORE. Все права защищены.</p>
+      <div class="footer__links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. Modal Popup -->
+  <div class="modal" id="modal">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modal-close">&times;</button>
+      <h3 class="modal__title">ЗАПИСАТЬСЯ НА <span>ТРЕНИРОВКУ</span></h3>
+      <p class="modal__desc">Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут.</p>
+      
+      <form class="modal__form" id="booking-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" class="form-input" placeholder=" " required>
+          <label for="name" class="form-label">Ваше имя</label>
+          <span class="error-msg" id="name-error">Пожалуйста, введите имя</span>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" id="phone" class="form-input" placeholder=" " required>
+          <label for="phone" class="form-label">Номер телефона</label>
+          <span class="error-msg" id="phone-error">Введите корректный номер телефона</span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+      </form>
+
+      <div class="modal__success" id="modal-success">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h4>Спасибо за заявку!</h4>
+        <p>Мы забронировали за вами пробное посещение. Скоро перезвоним!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
